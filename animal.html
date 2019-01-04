@@ -8,25 +8,34 @@
 
 </head>
 <body>
+    <h1>Cadastro de Animal</h1>
     <table>
         <tr>
-            <td>RAÇA</td>
-            <td>NOME</td>
-            <td>IDADE</td>
+            <label>
+                NOME
+                <input type="text" name="nomeAnimal" id="nomeAnimal" placeholder="NOME">
+            </label>
+            <label>
+                RAÇA
+                <input type="text" name="racaAnimal" id="racaAnimal" placeholder="RAÇA">
+            </label>
+            <label>
+                IDADE
+                <input type="text" name="idadeAnimal" id="idadeAnimal" placeholder="IDADE">
+            </label>
         </tr>
         <tr>
-            <td><input type="text" name="nomeAnimal" id="nomeAnimal" placeholder="NOME"></td>
-            <td><input type="text" name="racaAnimal" id="racaAnimal" placeholder="RAÇA"></td>
-            <td><input type="text" name="idadeAnimal" id="idadeAnimal" placeholder="IDADE"></td>
         </tr>
         <tr>
             <td colspan="3">
+                <br>
                 <textarea name=""  cols="80" rows="5" id="comit"></textarea>
             </td>
         </tr>
+        <br>
         <tr>
             <td colspan="3">
-                <button type="button" onclick="dados()">Clicando</button>
+                <button type="button" onclick="dados()">Cadastrar</button>
             </td>
         </tr>
     </table>
