@@ -17,21 +17,43 @@
         </tr>
         <tr>
             <td><input type="text" name="nomeUsuario" id="nomeUsuario" placeholder="NOME"></td>
-            <td><input type="text" name="nsobrenomeUsuario" id="sobrenomeUsuario"placeholder="SOBRENOME"></td>
-            <td><input type="number" name="idadeUsuario" id="idadeUsuario"placeholder="IDADE"></td>
+            <td><input type="text" name="sobrenomeUsuario" id="sobrenomeUsuario"placeholder="SOBRENOME"></td>
+            <td><input type="text" name="idadeUsuario" id="idadeUsuario"placeholder="IDADE"></td>
             <td> <a href="http://google.com">Acessar Google</a> </td>
         </tr>
-        <tr>
             <td>
-                <button type="button" onclick="mostrMsg()">Executar JS</button>
+                Comentario
             </td>
-            
+        <tr>
+            <td colspan="4">
+                <textarea name=""  cols="80" rows="5" id="comit"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <button type="button" onclick="dizOla()">Clicando</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <textarea type="text" name="conteudo" id="conteudo"></textarea>   
+            </td>
         </tr>
     </table>
-    
     <script>
         function mostrMsg(){
             alert("Testando...")
+        }
+    </script>
+    <script>
+        function dizOla(){
+            var nome = document.getElementById("nomeUsuario").value;
+            var sobrenome = document.getElementById("sobrenomeUsuario").value;
+            var idade = document.getElementById("idadeUsuario").value;
+            //alert("Ola, seja bem vindo " + nome + " " + sobrenome + " Idade: " + idade);
+            var d = "Ola, seja bem vindo " + nome + " " + sobrenome + " Idade: " + idade;
+            document.getElementById("conteudo").value = d;
+            document.getElementById("comit").value = d;
         }
     </script>
 </body>
