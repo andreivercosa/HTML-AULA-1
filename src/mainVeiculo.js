@@ -25,6 +25,6 @@ function dados(){
         alert("Informe o Ano")
         return false
     }
-    alert("Marca: "+marca+"\nCor: "+cor+"\nModelo: "+modelo+"Ano: "+ano)
+    alert("Marca: "+marca+"\nCor: "+cor+"\nModelo: "+modelo+"\nAno: "+ano)
     
 }
