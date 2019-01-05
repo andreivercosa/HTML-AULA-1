@@ -1,0 +1,14 @@
+.fundoVerde{
+    background-color: green;
+    color: bisque;
+
+    
+}
+.fundoAzul{
+    background-color: rgb(57, 114, 135); 
+    color:  rgb(235, 170, 4);
+}
+#divDoFundoVermelho{
+    background-color: brown;
+    color: white;
+}
