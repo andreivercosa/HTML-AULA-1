@@ -1,30 +1,56 @@
 function dados(){
-    var marca = document.getElementById("marca").value;
-    var cor = document.getElementById("cor").value;
-    var modelo = document.getElementById("modelo").value;
-    var ano = document.getElementById("ano").value;
+    // var marca = document.getElementById("marca").value;
+    // var cor = document.getElementById("cor").value;
+    // var modelo = document.getElementById("modelo").value;
+    // var ano = document.getElementById("ano").value;
     //alert("Ola, seja bem vindo " + nome + " " + sobrenome + " Idade: " + idade);
+    var marca = $("#marca").val()
+    var cor = $("#cor").val()
+    var modelo = $("#modelo").val()
+    var ano = $("#ano").val()
     
     
+    // if(!marca){
+    //     $.alert("Informe a Marca")
+    //     return false
+    // }
     if(!marca){
-        alert("Informe a Marca")
+        $.alert({
+            title: 'Atenção',
+            content: 'Informe a Marca',
+            type: 'red'})
         return false
     }
 
     if(!cor){
-        alert("Informe a Cor")
+        $.alert({
+            title: 'Atenção',
+            content: 'Informe a Cor',
+            type: 'red'})
         return false
     }
 
     if(!modelo){
-        alert("Informe o Modelo")
+        $.alert({
+            title: 'Atenção',
+            content: 'Informe a Modelo',
+            type: 'red'})
+        return false
         return false
     }
 
     if(!ano){
-        alert("Informe o Ano")
+        $.alert({
+            title: 'Atenção',
+            content: 'Informe a Ano',
+            type: 'red'})
         return false
     }
-    alert("Marca: "+marca+"\nCor: "+cor+"\nModelo: "+modelo+"\nAno: "+ano)
+   var t = "Marca: "+marca+"\nCor: "+cor+"\nModelo: "+modelo+"\nAno: "+ano
+    $.alert({
+        title: 'Sucesso',
+        content: t,
+        type: 'green'})
+        
     
 }

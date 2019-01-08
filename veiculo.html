@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
@@ -6,13 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap-3.4.0-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="jquery-confirm-v3.3.3/dist/jquery-confirm.min.css">
 </head>
 <body>
     <!-- marca cor modelo e ano -->
-        <div class="container form-horizontal" style="margin-top:10px">
+        <div class="container-fluid form-horizontal" style="margin-top:10px">
                 <div class="panel panel-danger">
+                    <div class="panel-heading">
+                            <h1>Veiculo
+                                <span class="glyphicon glyphicon glyphicon-ok"></span>
+                            </h1>
+                    </div>
                     <div class="panel-body">
-                        <h1>Veiculo</h1>
                         <div class="form-group">
                             <div class="col-sm-6">
                                 <label for="marca">Marca</label>
@@ -37,10 +42,45 @@
                                     <input type="text" name="ano" id="ano" class="form-control">
                                 </div>
                             </div>
-                            <button class="btn btn-success" type="button" onclick="dados()" >Cadastrar</button>
+
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <table class="table table-hover table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Marca</th>
+                                                <th>Cor</th>
+                                                <th>Modelo</th>
+                                                <th>Ano</th>
+                                        </tr>
+                                            <tbody>
+                                                <tr>
+                                                    <td>a</td>
+                                                    <td>a</td>
+                                                    <td>a</td>
+                                                    <td>a</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>b</td>
+                                                    <td>b</td>
+                                                    <td>b</td>
+                                                    <td>b</td>
+                                                </tr>
+                                            </tbody>
+                                        </thead>
+                                    </table>
+
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-success" type="button" onclick="dados()" >Cadastrar <span class="glyphicon glyphicon-floppy-open"></span></button>
                     </div>        
                 </div>
         </div>
+        
+        <script src="bootstrap-3.4.0-dist/js/jquery-1.12.4.min.js"></script>
+        <script src="bootstrap-3.4.0-dist/js/bootstrap.js"></script>
+        <script src="jquery-confirm-v3.3.3/dist/jquery-confirm.min.js"></script>
         <script src="src/mainVeiculo.js"></script>
 </body>
 </html>
